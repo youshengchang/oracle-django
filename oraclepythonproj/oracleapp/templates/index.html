@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <title>Office Locations</title>
+  </head>
+<body bgcolor="#ffffff">
+              
+
+
+<h1>Office Locations</h1>
+<table border="1">
+ <tr>
+   <th>Location ID</th>
+   <th>Street Address</th>
+   <th>City</th>
+ </tr>
+ {% for loc in locations %}
+ <tr>
+   <td>{{loc.location_id}}</td>
+   <td>{{loc.street_address}}</td>
+   <td>{{loc.city}}</td>
+ </tr>
+ {% endfor %}
+</table>
+              
+
+
+</body>
+</html>
